@@ -15,9 +15,10 @@ export default function Video() {
 
         <div className="fade-up max-w-4xl mx-auto rounded-2xl shadow-2xl overflow-hidden">
           <iframe
-            src="https://drive.google.com/file/d/1GymRkroWIEfd1J28_3qExB6APHQsMqaY/preview"
+            src="https://www.youtube.com/embed/DiBlIKrj138"
             className="w-full aspect-video"
-            allow="autoplay"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
             title="Watch How I Work"
           />
         </div>
