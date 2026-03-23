@@ -25,7 +25,7 @@ export default function Story() {
             <div className="space-y-6 text-gray-300 leading-relaxed">
               <p>
                 Six months ago, I&apos;d never written a line of code. I spent
-                6+ years at Intel managing manufacturing systems, served as an
+                almost 8 years at Intel managing manufacturing systems, served as an
                 IDF tank commander, and earned a degree in Education.
               </p>
               <p>
