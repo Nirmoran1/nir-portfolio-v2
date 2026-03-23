@@ -8,7 +8,7 @@ const projects = [
     name: "ShamenzEat",
     tagline: "Bilingual Family Recipe Library",
     description:
-      "Heritage recipes preserved across generations. Hebrew & English, AI-powered import, real-time family sharing.",
+      "Built for my family to collect and share heritage recipes. Hebrew and English, AI-powered recipe import, family sharing.",
     tech: ["Next.js", "Supabase", "Claude API", "Vercel"],
     link: "https://shamenz-eat.vercel.app",
     color: "#E85D26",
@@ -18,7 +18,7 @@ const projects = [
     name: "Plugat Sheli",
     tagline: "IDF Reserve Platoon Manager",
     description:
-      "Personnel tracking, scheduling, and operational readiness for reserve units. Role-based access, 25 secured routes.",
+      "Built for my reserve unit — personnel tracking, scheduling, operational readiness. Has role-based access and 25 secured API routes.",
     tech: ["Next.js 16", "Prisma", "PostgreSQL", "NextAuth"],
     link: "https://plugat-sheli.vercel.app",
     color: "#2D7D46",
@@ -155,13 +155,13 @@ export default function Projects() {
     <section id="projects" className="bg-light py-24">
       <div className="text-center mb-16 px-4">
         <p className="uppercase tracking-widest text-sm text-muted mb-4 font-dm">
-          Portfolio
+          What I&apos;ve Built
         </p>
         <h2 className="font-playfair text-4xl md:text-5xl font-bold text-dark">
           8 Projects. 6 Months.
         </h2>
         <p className="text-muted text-lg mt-4 font-dm">
-          Each one was built to solve a real problem — and each one proved it&apos;s possible.
+          Some are used daily, some are experiments. All of them work.
         </p>
       </div>
 

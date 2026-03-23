@@ -3,14 +3,14 @@ export default function Contact() {
     <section id="contact" className="bg-light py-24">
       <div className="max-w-6xl mx-auto px-6 text-center fade-up">
         <p className="uppercase tracking-widest text-sm text-muted mb-4">
-          Let&apos;s Talk
+          Get in Touch
         </p>
         <h2 className="font-playfair text-4xl md:text-5xl font-bold mb-6">
-          Ready to Build Something?
+          Want to Talk?
         </h2>
         <p className="text-muted text-lg max-w-2xl mx-auto">
-          Whether you need an AI-native builder for your team, or want to
-          explore what&apos;s possible — I&apos;d love to hear from you.
+          I&apos;m looking for my next challenge — whether that&apos;s a role
+          on your team or a project worth building. Let&apos;s connect.
         </p>
         <div className="flex gap-4 justify-center mt-8">
           <a

@@ -17,7 +17,7 @@ const steps = [
     number: "03",
     title: "Build",
     decide: "Review and approve changes",
-    execute: "Writes code, runs tests, deploys to production",
+    execute: "Writes code, runs tests, deploys to Vercel",
   },
   {
     number: "04",

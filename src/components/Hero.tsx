@@ -2,9 +2,9 @@
 
 const stats = [
   { value: "8", label: "Projects Built", target: "8", suffix: "" },
-  { value: "6+", label: "Months Building", target: "6", suffix: "+" },
-  { value: "15K+", label: "Lines Generated", target: "15000", suffix: "+" },
-  { value: "0", label: "Prior Experience", target: "0", suffix: "" },
+  { value: "6+", label: "Months Learning & Building", target: "6", suffix: "+" },
+  { value: "2", label: "Used Daily by Family", target: "2", suffix: "" },
+  { value: "0", label: "Coding Background", target: "0", suffix: "" },
 ];
 
 export default function Hero() {
@@ -30,8 +30,8 @@ export default function Hero() {
         {/* Subtitle */}
         <div className="fade-up mt-8">
           <p className="font-dm text-lg md:text-xl text-muted max-w-2xl mx-auto leading-relaxed">
-            8 projects built in 6 months. Zero prior coding experience.
-            I&apos;m the architect — AI is my entire development team.
+            8 projects built in 6 months. No coding background. I&apos;m
+            the architect — AI is my development team.
           </p>
         </div>
 
