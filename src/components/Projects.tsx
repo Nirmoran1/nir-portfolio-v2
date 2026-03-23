@@ -140,11 +140,6 @@ function ProjectCard({
         ))}
       </div>
 
-      {project.link && (
-        <p className="text-sm text-primary font-medium mt-4">
-          Try It &rarr;
-        </p>
-      )}
     </div>
   );
 
@@ -172,7 +167,7 @@ export default function Projects() {
           What I&apos;ve Built
         </p>
         <h2 className="font-playfair text-4xl md:text-5xl font-bold text-dark">
-          8 Projects. 6 Months.
+          8 Projects.
         </h2>
         <p className="text-muted text-lg mt-4 font-dm">
           Some are used daily, some are experiments. All of them work.
