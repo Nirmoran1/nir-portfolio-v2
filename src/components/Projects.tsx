@@ -158,10 +158,10 @@ export default function Projects() {
           Portfolio
         </p>
         <h2 className="font-playfair text-4xl md:text-5xl font-bold text-dark">
-          8 Products. 6 Months.
+          8 Projects. 6 Months.
         </h2>
         <p className="text-muted text-lg mt-4 font-dm">
-          Each one solves a real problem for real people.
+          Each one was built to solve a real problem — and each one proved it&apos;s possible.
         </p>
       </div>
 

@@ -40,9 +40,9 @@ export default function Story() {
                 reserve unit.
               </p>
               <p>
-                Today I build faster than most dev teams. My secret isn&apos;t
-                coding skill — it&apos;s knowing what to build, who to build it
-                for, and how to direct AI to execute at production quality.
+                Not all of them are commercial products — some are used by my
+                family, some are proofs of concept. But every one of them works,
+                and every one was built from zero to deployed by me and AI alone.
               </p>
             </div>
           </div>
@@ -68,10 +68,11 @@ export default function Story() {
             <div className="glass-card border-l-4 border-primary rounded-xl p-6">
               <h3 className="font-bold text-lg text-primary mb-3">Why Me?</h3>
               <p className="text-gray-300">
-                I don&apos;t have traditional dev experience — but I ship
-                products faster than teams of developers. I understand users
+                I don&apos;t have traditional dev experience — but I build
+                functional apps faster than most dev teams. I understand users
                 because I build for people I know. I understand AI because
-                it&apos;s my entire workflow.
+                it&apos;s my entire workflow. And I&apos;m honest about
+                what&apos;s a real product and what&apos;s a proof of concept.
               </p>
             </div>
           </div>

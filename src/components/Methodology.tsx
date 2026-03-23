@@ -22,8 +22,8 @@ const steps = [
   {
     number: "04",
     title: "Ship",
-    decide: "Validate with real users, decide what's next",
-    execute: "Monitors, fixes bugs, optimizes performance",
+    decide: "Deploy, gather feedback, iterate",
+    execute: "Fixes bugs, optimizes, keeps it running",
   },
 ];
 
