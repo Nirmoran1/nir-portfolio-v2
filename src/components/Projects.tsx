@@ -1,10 +1,32 @@
 "use client";
 
 import { useState } from "react";
+import {
+  UtensilsCrossed,
+  ShieldCheck,
+  Sun,
+  Wallet,
+  HeartPulse,
+  ScanLine,
+  Gamepad2,
+  Bot,
+} from "lucide-react";
+import type { LucideIcon } from "lucide-react";
+
+const iconMap: Record<string, LucideIcon> = {
+  UtensilsCrossed,
+  ShieldCheck,
+  Sun,
+  Wallet,
+  HeartPulse,
+  ScanLine,
+  Gamepad2,
+  Bot,
+};
 
 const projects = [
   {
-    icon: "🍳",
+    icon: "UtensilsCrossed",
     name: "ShamenzEat",
     tagline: "Bilingual Family Recipe Library",
     description:
@@ -15,7 +37,7 @@ const projects = [
     inUse: false,
   },
   {
-    icon: "🎖️",
+    icon: "ShieldCheck",
     name: "Plugat Sheli",
     tagline: "IDF Reserve Platoon Manager",
     description:
@@ -26,7 +48,7 @@ const projects = [
     inUse: false,
   },
   {
-    icon: "☀️",
+    icon: "Sun",
     name: "Sol Israel",
     tagline: "Issue & Shortage Reporter",
     description:
@@ -37,7 +59,7 @@ const projects = [
     inUse: false,
   },
   {
-    icon: "💰",
+    icon: "Wallet",
     name: "Split Ease",
     tagline: "Smart Expense Splitter",
     description:
@@ -48,7 +70,7 @@ const projects = [
     inUse: true,
   },
   {
-    icon: "💊",
+    icon: "HeartPulse",
     name: "Medicine Tracker",
     tagline: "Family Health Assistant",
     description:
@@ -59,7 +81,7 @@ const projects = [
     inUse: true,
   },
   {
-    icon: "🧾",
+    icon: "ScanLine",
     name: "Receipt Scanner",
     tagline: "Smart Grocery Manager",
     description:
@@ -70,7 +92,7 @@ const projects = [
     inUse: false,
   },
   {
-    icon: "🐻",
+    icon: "Gamepad2",
     name: "Pudgy Pals",
     tagline: "Fun Game",
     description:
@@ -81,7 +103,7 @@ const projects = [
     inUse: false,
   },
   {
-    icon: "🤖",
+    icon: "Bot",
     name: "Bob — AI Agent",
     tagline: "Personal Assistant",
     description:
@@ -113,10 +135,15 @@ function ProjectCard({
     >
       <div className="flex items-center gap-3">
         <div
-          className="w-12 h-12 rounded-lg flex items-center justify-center text-2xl"
-          style={{ backgroundColor: `${project.color}33` }}
+          className="w-12 h-12 rounded-xl flex items-center justify-center"
+          style={{ backgroundColor: `${project.color}1A` }}
         >
-          {project.icon}
+          {(() => {
+            const Icon = iconMap[project.icon];
+            return Icon ? (
+              <Icon size={24} strokeWidth={2} style={{ color: project.color }} />
+            ) : null;
+          })()}
         </div>
         {project.inUse && (
           <span className="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full font-medium">
