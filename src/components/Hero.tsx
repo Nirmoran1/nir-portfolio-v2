@@ -14,7 +14,7 @@ export default function Hero() {
         {/* Label */}
         <div className="fade-up">
           <span className="uppercase tracking-widest text-sm text-muted font-dm">
-            AI-Native Builder
+            Hi, I&apos;m Nir Moran and this is my AI portfolio
           </span>
         </div>
 
