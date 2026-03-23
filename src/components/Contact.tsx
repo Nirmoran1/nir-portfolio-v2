@@ -28,6 +28,11 @@ export default function Contact() {
             LinkedIn →
           </a>
         </div>
+        <p className="text-muted text-sm mt-6">
+          <a href="tel:+972543163837" className="hover:text-primary transition">
+            054-316-3837
+          </a>
+        </p>
       </div>
     </section>
   );
