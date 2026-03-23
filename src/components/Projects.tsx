@@ -1,0 +1,175 @@
+"use client";
+
+import { useState } from "react";
+
+const projects = [
+  {
+    icon: "🍳",
+    name: "ShamenzEat",
+    tagline: "Bilingual Family Recipe Library",
+    description:
+      "Heritage recipes preserved across generations. Hebrew & English, AI-powered import, real-time family sharing.",
+    tech: ["Next.js", "Supabase", "Claude API", "Vercel"],
+    link: "https://shamenz-eat.vercel.app",
+    color: "#E85D26",
+  },
+  {
+    icon: "🎖️",
+    name: "Plugat Sheli",
+    tagline: "IDF Reserve Platoon Manager",
+    description:
+      "Personnel tracking, scheduling, and operational readiness for reserve units. Role-based access, 25 secured routes.",
+    tech: ["Next.js 16", "Prisma", "PostgreSQL", "NextAuth"],
+    link: "https://plugat-sheli.vercel.app",
+    color: "#2D7D46",
+  },
+  {
+    icon: "☀️",
+    name: "Sol Israel",
+    tagline: "Issue & Shortage Reporter",
+    description:
+      "Community platform for reporting local issues and shortages. Built on Base44's AI platform.",
+    tech: ["Base44", "No-Code AI"],
+    link: "https://app-6ff33b95.base44.app",
+    color: "#4361EE",
+  },
+  {
+    icon: "💰",
+    name: "Split Ease",
+    tagline: "Smart Expense Splitter",
+    description:
+      "Expense splitting for groups — clean interface, instant calculations, Hebrew-first.",
+    tech: ["Base44", "Natural Language"],
+    link: "https://split-ease-a6de60aa.base44.app",
+    color: "#8B5CF6",
+  },
+  {
+    icon: "💊",
+    name: "Medicine Tracker",
+    tagline: "Family Health Assistant",
+    description:
+      "Built for my parents to track medications, dosages, schedules, and refills.",
+    tech: ["AI-Built", "Health"],
+    link: null,
+    color: "#0EA5E9",
+  },
+  {
+    icon: "🧾",
+    name: "Receipt Scanner",
+    tagline: "Smart Grocery Manager",
+    description:
+      "Scans receipts, extracts purchase data, builds custom grocery lists with AI OCR.",
+    tech: ["AI-Built", "OCR"],
+    link: null,
+    color: "#D946EF",
+  },
+  {
+    icon: "🐻",
+    name: "Pudgy Pals",
+    tagline: "Fun Game",
+    description:
+      "A playful game with bear characters — because building should also be fun.",
+    tech: ["AI-Built", "Vercel"],
+    link: "https://pudgy-pals.vercel.app",
+    color: "#F59E0B",
+  },
+  {
+    icon: "🤖",
+    name: "Bob — AI Agent",
+    tagline: "Personal Assistant",
+    description:
+      "Scheduled AI agent runs twice daily — syncs projects, teaches marketing, sends action items.",
+    tech: ["Claude Desktop", "Scheduled Tasks", "Gmail API"],
+    link: null,
+    color: "#06B6D4",
+  },
+];
+
+function ProjectCard({
+  project,
+}: {
+  project: (typeof projects)[number];
+}) {
+  const [hovered, setHovered] = useState(false);
+
+  const content = (
+    <div
+      className="rounded-xl bg-white p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 fade-up h-full"
+      style={{
+        borderLeft: hovered
+          ? `3px solid ${project.color}`
+          : "3px solid transparent",
+      }}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+    >
+      <div className="flex items-center gap-3">
+        <div
+          className="w-12 h-12 rounded-lg flex items-center justify-center text-2xl"
+          style={{ backgroundColor: `${project.color}33` }}
+        >
+          {project.icon}
+        </div>
+        {project.link && (
+          <span className="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full font-medium">
+            LIVE
+          </span>
+        )}
+      </div>
+
+      <h3 className="font-bold text-lg mt-4 text-dark">{project.name}</h3>
+      <p className="text-muted text-sm">{project.tagline}</p>
+      <p className="text-sm text-muted mt-2">{project.description}</p>
+
+      <div className="flex flex-wrap gap-2 mt-4">
+        {project.tech.map((t) => (
+          <span
+            key={t}
+            className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded"
+          >
+            {t}
+          </span>
+        ))}
+      </div>
+    </div>
+  );
+
+  if (project.link) {
+    return (
+      <a
+        href={project.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block"
+      >
+        {content}
+      </a>
+    );
+  }
+
+  return content;
+}
+
+export default function Projects() {
+  return (
+    <section id="projects" className="bg-light py-24">
+      <div className="text-center mb-16 px-4">
+        <p className="uppercase tracking-widest text-sm text-muted mb-4 font-dm">
+          Portfolio
+        </p>
+        <h2 className="font-playfair text-4xl md:text-5xl font-bold text-dark">
+          8 Products. 6 Months.
+        </h2>
+        <p className="text-muted text-lg mt-4 font-dm">
+          Each one solves a real problem for real people.
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto px-4">
+        {projects.map((project) => (
+          <ProjectCard key={project.name} project={project} />
+        ))}
+      </div>
+    </section>
+  );
+}
