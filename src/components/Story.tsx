@@ -20,7 +20,7 @@ export default function Story() {
             <h2 className="font-playfair text-4xl md:text-5xl font-bold mb-8">
               From Zero Code to
               <br />
-              <span className="italic">Eight Products</span>
+              <span className="italic">Eight Projects</span>
             </h2>
             <div className="space-y-6 text-gray-300 leading-relaxed">
               <p>

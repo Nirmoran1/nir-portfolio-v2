@@ -17,11 +17,11 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: "Nir Moran — AI-Native Builder",
   description:
-    "8 products shipped in 6 months. Zero prior coding experience. I'm the architect — AI is my entire development team.",
+    "8 projects built in 6 months. No coding background. I'm the architect — AI is my development team.",
   openGraph: {
     title: "Nir Moran — AI-Native Builder",
     description:
-      "8 products shipped in 6 months. Zero prior coding experience.",
+      "8 projects built in 6 months. No coding background.",
     type: "website",
     locale: "en_US",
   },
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Nir Moran — AI-Native Builder",
     description:
-      "8 products shipped in 6 months. Zero prior coding experience.",
+      "8 projects built in 6 months. No coding background.",
   },
 };
 

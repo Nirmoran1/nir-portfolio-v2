@@ -12,6 +12,7 @@ const projects = [
     tech: ["Next.js", "Supabase", "Claude API", "Vercel"],
     link: "https://shamenz-eat.vercel.app",
     color: "#E85D26",
+    inUse: false,
   },
   {
     icon: "🎖️",
@@ -22,46 +23,51 @@ const projects = [
     tech: ["Next.js 16", "Prisma", "PostgreSQL", "NextAuth"],
     link: "https://plugat-sheli.vercel.app",
     color: "#2D7D46",
+    inUse: false,
   },
   {
     icon: "☀️",
     name: "Sol Israel",
     tagline: "Issue & Shortage Reporter",
     description:
-      "Community platform for reporting local issues and shortages. Built on Base44's AI platform.",
+      "A concept app for reporting local issues and shortages. Built on Base44's AI platform.",
     tech: ["Base44", "No-Code AI"],
     link: "https://app-6ff33b95.base44.app",
     color: "#4361EE",
+    inUse: false,
   },
   {
     icon: "💰",
     name: "Split Ease",
     tagline: "Smart Expense Splitter",
     description:
-      "Expense splitting for groups — clean interface, instant calculations, Hebrew-first.",
+      "Expense splitting for groups — clean interface, instant calculations, Hebrew-first. My sisters actually use this one.",
     tech: ["Base44", "Natural Language"],
     link: "https://split-ease-a6de60aa.base44.app",
     color: "#8B5CF6",
+    inUse: true,
   },
   {
     icon: "💊",
     name: "Medicine Tracker",
     tagline: "Family Health Assistant",
     description:
-      "Built for my parents to track medications, dosages, schedules, and refills.",
+      "Built for my parents to track medications, dosages, schedules, and refills. My parents use this daily.",
     tech: ["AI-Built", "Health"],
     link: null,
     color: "#0EA5E9",
+    inUse: true,
   },
   {
     icon: "🧾",
     name: "Receipt Scanner",
     tagline: "Smart Grocery Manager",
     description:
-      "Scans receipts, extracts purchase data, builds custom grocery lists with AI OCR.",
+      "A proof of concept — scans receipts, extracts purchase data, builds custom grocery lists with AI OCR.",
     tech: ["AI-Built", "OCR"],
     link: null,
     color: "#D946EF",
+    inUse: false,
   },
   {
     icon: "🐻",
@@ -72,6 +78,7 @@ const projects = [
     tech: ["AI-Built", "Vercel"],
     link: "https://pudgy-pals.vercel.app",
     color: "#F59E0B",
+    inUse: false,
   },
   {
     icon: "🤖",
@@ -82,6 +89,7 @@ const projects = [
     tech: ["Claude Desktop", "Scheduled Tasks", "Gmail API"],
     link: null,
     color: "#06B6D4",
+    inUse: false,
   },
 ];
 
@@ -110,9 +118,9 @@ function ProjectCard({
         >
           {project.icon}
         </div>
-        {project.link && (
+        {project.inUse && (
           <span className="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full font-medium">
-            LIVE
+            In Use
           </span>
         )}
       </div>
@@ -131,6 +139,12 @@ function ProjectCard({
           </span>
         ))}
       </div>
+
+      {project.link && (
+        <p className="text-sm text-primary font-medium mt-4">
+          Try It &rarr;
+        </p>
+      )}
     </div>
   );
 
