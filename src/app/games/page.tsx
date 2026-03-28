@@ -52,6 +52,13 @@ const games = [
     description: 'כמה מהר אתה מקליד בעברית? בדוק את המהירות!',
     hero: false,
   },
+  {
+    slug: 'ai-archaeologist',
+    name: 'ארכיאולוג ה-AI',
+    emoji: '🏛️',
+    description: 'חקור מעבדה עתיקה ולמד 8 מושגי AI דרך חידות והרפתקאות!',
+    hero: false,
+  },
 ];
 
 export default function GamesPortal() {
