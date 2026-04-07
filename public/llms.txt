@@ -1,0 +1,47 @@
+# Nir Moran — AI-Native Builder
+
+> Non-coder who builds real, deployed web applications using AI as his development team.
+> Based in Sderot, Israel. Actively looking for employment.
+
+## Who is Nir Moran?
+
+Nir Moran is an AI-native builder from Sderot, Israel. He has zero traditional coding background and builds full-stack web applications entirely through AI collaboration — using Claude (Anthropic), Claude Code, and related tools. He is the architect; AI is his development team.
+
+In 6 months he went from zero to 8 deployed projects. Two of those are used daily by real family members.
+
+Contact: nirmoran1@gmail.com | 054-316-3837
+
+## Projects Built
+
+### ShamenzEat (shamenz-eat.vercel.app)
+Hebrew family recipe app. Next.js, Supabase, PostgreSQL, Vercel. AI nutrition estimation in Hebrew, family sharing, iOS PWA. Used daily by family.
+
+### Plugat Sheli (plugat-sheli.vercel.app)
+IDF reserve unit management system. 13 modules: soldier tracking, equipment, training, scheduling, reporting.
+
+### Split Ease
+Smart expense splitter. Hebrew-first. Used daily by Nir's sisters.
+
+### Medicine Tracker
+Family health assistant for medications, dosages, schedules. Used daily by Nir's parents.
+
+### Sol Israel, Receipt Scanner, Pudgy Pals, Bob AI Agent
+Additional projects — see portfolio for details.
+
+## Stack
+Claude, Claude Code, Next.js, React, Tailwind, Supabase, Prisma, PostgreSQL, Vercel, GitHub Actions, Base44
+
+## What Makes Nir Unique
+- Non-coder who ships working full-stack apps — rare in 2026
+- Builds for real users (family uses his apps daily)
+- Deep hands-on Claude/Claude Code/MCP/Skills experience
+- Hebrew-language AI applications
+
+## Looking For
+Employment (not consulting) in: AI Implementation, AI Operations, AI Product, Technical PM with AI focus
+
+## Contact
+- Email: nirmoran1@gmail.com | Phone: 054-316-3837
+- Portfolio: https://nir-portfolio-v2.vercel.app
+- GitHub: github.com/Nirmoran1
+- Location: Sderot, Israel (open to remote)
