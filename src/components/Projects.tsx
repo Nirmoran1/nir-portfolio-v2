@@ -37,6 +37,16 @@ const projects = [
     inUse: false,
   },
   {
+    icon: "Gamepad2",
+    name: "Hebrew Games Portal",
+    tagline: "7 Educational Games in Hebrew",
+    description: "A collection of interactive Hebrew-language games built with AI — vocabulary, memory, trivia, and more. All playable in the browser.",
+    tech: ["Next.js", "Claude API", "Vercel"],
+    link: "/games",
+    color: "#7C3AED",
+    inUse: false,
+  },
+  {
     icon: "ShieldCheck",
     name: "Plugat Sheli",
     tagline: "IDF Reserve Platoon Manager",
@@ -194,7 +204,7 @@ export default function Projects() {
           What I&apos;ve Built
         </p>
         <h2 className="font-playfair text-4xl md:text-5xl font-bold text-dark">
-          8 Projects.
+          9 Projects.
         </h2>
         <p className="text-muted text-lg mt-4 font-dm">
           Some are used daily, some are experiments. All of them work.
