@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import {
   UtensilsCrossed,
   ShieldCheck,
@@ -33,6 +34,7 @@ const projects = [
       "Built for my family to collect and share heritage recipes. Hebrew and English, AI-powered recipe import, family sharing.",
     tech: ["Next.js", "Supabase", "Claude API", "Vercel"],
     link: "https://shamenz-eat.vercel.app",
+    caseStudySlug: "shamenz-eat",
     color: "#E85D26",
     inUse: false,
   },
@@ -43,6 +45,7 @@ const projects = [
     description: "A collection of interactive Hebrew-language games built with AI — vocabulary, memory, trivia, and more. All playable in the browser.",
     tech: ["Next.js", "Claude API", "Vercel"],
     link: "/games",
+    caseStudySlug: null,
     color: "#7C3AED",
     inUse: false,
   },
@@ -54,6 +57,7 @@ const projects = [
       "Built for my reserve unit — personnel tracking, scheduling, operational readiness. Has role-based access and 25 secured API routes.",
     tech: ["Next.js 16", "Prisma", "PostgreSQL", "NextAuth"],
     link: "https://plugat-sheli.vercel.app",
+    caseStudySlug: "plugat-sheli",
     color: "#2D7D46",
     inUse: false,
   },
@@ -65,6 +69,7 @@ const projects = [
       "A concept app for reporting local issues and shortages. Built on Base44's AI platform.",
     tech: ["Base44", "No-Code AI"],
     link: "https://app-6ff33b95.base44.app",
+    caseStudySlug: "sol-israel",
     color: "#4361EE",
     inUse: false,
   },
@@ -76,6 +81,7 @@ const projects = [
       "Expense splitting for groups — clean interface, instant calculations, Hebrew-first. My sisters actually use this one.",
     tech: ["Base44", "Natural Language"],
     link: "https://split-ease-a6de60aa.base44.app",
+    caseStudySlug: "split-ease",
     color: "#8B5CF6",
     inUse: true,
   },
@@ -87,6 +93,7 @@ const projects = [
       "Built for my parents to track medications, dosages, schedules, and refills. My parents use this daily.",
     tech: ["AI-Built", "Health"],
     link: null,
+    caseStudySlug: "medicine-tracker",
     color: "#0EA5E9",
     inUse: true,
   },
@@ -98,6 +105,7 @@ const projects = [
       "A proof of concept — scans receipts, extracts purchase data, builds custom grocery lists with AI OCR.",
     tech: ["AI-Built", "OCR"],
     link: null,
+    caseStudySlug: "receipt-scanner",
     color: "#D946EF",
     inUse: false,
   },
@@ -109,6 +117,7 @@ const projects = [
       "A playful game with bear characters — because building should also be fun.",
     tech: ["AI-Built", "Vercel"],
     link: "https://pudgy-pals.vercel.app",
+    caseStudySlug: null,
     color: "#F59E0B",
     inUse: false,
   },
@@ -120,6 +129,7 @@ const projects = [
       "Scheduled AI agent runs twice daily — syncs projects, teaches marketing, sends action items.",
     tech: ["Claude Desktop", "Scheduled Tasks", "Gmail API"],
     link: null,
+    caseStudySlug: null,
     color: "#06B6D4",
     inUse: false,
   },
@@ -179,6 +189,14 @@ function ProjectCard({
 
     </div>
   );
+
+  if (project.caseStudySlug) {
+    return (
+      <Link href={`/projects/${project.caseStudySlug}`} className="block">
+        {content}
+      </Link>
+    );
+  }
 
   if (project.link) {
     return (
